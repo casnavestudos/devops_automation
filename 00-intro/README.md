@@ -111,8 +111,14 @@ watch --version
 
 ### 11. Instale o VS Code:
 
-Baixe em: [https://code.visualstudio.com/](https://code.visualstudio.com/)
-E instale as extensões: Docker, Terraform, YAML, GitHub Pull Requests
+Baixe em: [https://code.visualstudio.com/](https://code.visualstudio.com/) (se estiver no WSL instale no windows)
+E instale as extensões no Ubuntu: Docker, Terraform, YAML, GitHub Pull Requests
+
+Se quiser via comando:
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension hashicorp.terraform
+code --install-extension redhat.vscode-yaml
+code --install-extension GitHub.vscode-pull-request-github
 
 ---
 
