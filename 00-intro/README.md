@@ -115,11 +115,12 @@ Baixe em: [https://code.visualstudio.com/](https://code.visualstudio.com/) (se e
 E instale as extensões no Ubuntu: Docker, Terraform, YAML, GitHub Pull Requests
 
 Se quiser via comando:
+```bash
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension hashicorp.terraform
 code --install-extension redhat.vscode-yaml
 code --install-extension GitHub.vscode-pull-request-github
-
+```
 ---
 
 ## 💻 Se você está usando **Windows com WSL 2 (recomendado)**
