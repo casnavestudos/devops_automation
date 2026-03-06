@@ -46,14 +46,39 @@ git config --global user.email "seu@email.com"
 
 ## 2. Clonar um repositório
 
-Crie um repositório no GitHub com um README.
-Depois, clone com:
-
+a) Caso deseje conectar com ssh siga os passos seguintes:
+Passo 1: Cria uma chave ssh
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repo.git
+/home/usuario/$ ssh-keygen -t ed25519 -C "casnav.estudos@gmail.com"
+```
+
+Passo 2: Copiar o conteudo da saido do comando abaixo:
+```bash
+/home/usuario/$ cat /home/usuario/.ssh/id_ed25519.pub
+```
+Passo 3: Crie um repositório no GitHub/gitlab com um README.
+
+Passo 4: Navegue até Menu > Settings > SSH and GPG Keys > New SSH Key
+Informar um titulo e em "key" insira o conteudo copiado da chave ssh
+[Add ssh key]
+
+Passo 4: Clone o repositorio com:
+```bash
+git clone git@github.com:seu-usuario/nome-do-repo.git
 cd nome-do-repo
 ```
 
+b) Caso NÃO deseje conectar com ssh siga os passos seguintes:
+Passo 1: Crie um repositório no GitHub/gitlab com um README.
+
+Passo 2: Clone o repositorio com:
+```bash
+git clone https://github.com/seu-usuario/nome-do-repo.git
+```
+Passo 3: Insira as credenciais e acesse o novo repositorio localmente
+```bash
+cd nome-do-repo
+```
 ---
 
 ## 3. Adicionar arquivos
